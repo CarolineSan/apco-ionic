@@ -1,3 +1,4 @@
+import { MenuPage } from './../menu/menu';
 import { FeedPage } from './../feed/feed';
 import { Component } from '@angular/core';
 
@@ -10,6 +11,7 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = FeedPage;
+  tab3Root = MenuPage;
 
   constructor() {
 

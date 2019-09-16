@@ -14,3 +14,36 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon, 
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+    color: rgb(47, 161, 90) !important;
+}
+
+.tabs-ios .tab-button[aria-selected=true] span.tab-button-text,
+.tabs-md .tab-button[aria-selected=true] span.tab-button-text {
+    color: rgb(47, 161, 90) !important;
+}
+
+.toolbar-background.toolbar-background-ios, .toolbar-background.toolbar-background-md {
+    background: rgb(47, 161, 90) !important;
+}
+
+button.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: rgb(47, 161, 90) !important;
+}
+
+.toolbar .searchbar-ios .searchbar-input {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.searchbar-ios .searchbar-input {
+    color:#fff !important;
+}
+
+.searchbar-md .searchbar-input {
+    border-radius: 10px !important;
+    background: #ffffff !important;
+    box-shadow: 0 0 0 0 !important;
+    -webkit-box-shadow: 0 0 0 0 !important;
+}
