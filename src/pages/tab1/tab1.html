@@ -1,0 +1,31 @@
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list inset>
+        <button ion-item (click)="openPage(PerfilPage)">
+            <ion-icon name="person" item-start></ion-icon> Minha Conta
+        </button>
+        <button ion-item (click)="openPage()">
+            <ion-icon name="stats" item-start></ion-icon> Ranking
+        </button>
+        <button ion-item (click)="openPage(SugestoesPage)">
+            <ion-icon name="create" item-start></ion-icon> Sugestões
+        </button>
+        <ion-list-header>
+            Comunicação
+        </ion-list-header>
+        <button ion-item (click)="openPage(SobrePage)">
+            <ion-icon name="information-circle" item-start></ion-icon> Sobre
+          </button>
+        <button ion-item (click)="openPage(AjudaPage)">
+            <ion-icon name="help-circle-outline" item-start></ion-icon> Ajuda
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-nav id="nav1" #content [root]="rootPage1"></ion-nav>

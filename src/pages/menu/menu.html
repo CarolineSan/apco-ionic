@@ -6,10 +6,22 @@
 -->
 <ion-header>
   <ion-navbar>
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
     <ion-title>Menu</ion-title>
   </ion-navbar>
+  <ion-toolbar>
+      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+    <ion-list inset>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+          {{ item }}
+        </button>  
+      </ion-list>
 
 </ion-content>

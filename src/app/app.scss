@@ -47,3 +47,13 @@ button.swiper-pagination-bullet.swiper-pagination-bullet-active {
     box-shadow: 0 0 0 0 !important;
     -webkit-box-shadow: 0 0 0 0 !important;
 }
+
+.toolbar-title-ios, .toolbar-title-md {
+    color: #fff;
+}
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default,
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #fff;
+    background-color: transparent;
+}
