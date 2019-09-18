@@ -1,6 +1,4 @@
-import { Tab3PageModule } from './../pages/tab3/tab3.module';
-import { Tab2PageModule } from './../pages/tab2/tab2.module';
-import { Tab1PageModule } from './../pages/tab1/tab1.module';
+import { SideMenuPageModule } from './../pages/side-menu/side-menu.module';
 import { AjudaPageModule } from './../pages/ajuda/ajuda.module';
 import { SugestoesPageModule } from './../pages/sugestoes/sugestoes.module';
 import { SobrePageModule } from './../pages/sobre/sobre.module';
@@ -37,9 +35,7 @@ import { RankingPageModule } from '../pages/ranking/ranking.module';
     SobrePageModule,
     SugestoesPageModule,
     AjudaPageModule,
-    Tab1PageModule,
-    Tab2PageModule,
-    Tab3PageModule
+    SideMenuPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
