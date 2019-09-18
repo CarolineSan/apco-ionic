@@ -1,7 +1,6 @@
 import { TabsPage } from './../tabs/tabs';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RankingPage } from '../ranking/ranking';
 
 /**
  * Generated class for the SideMenuPage page.
@@ -26,8 +25,8 @@ export class SideMenuPage {
     console.log('ionViewDidLoad SideMenuPage');
   }
 
-  openPage() {
-    this.navCtrl.push(RankingPage);
+  openPage(page) {
+    this.navCtrl.push(page);
   }
 
 }

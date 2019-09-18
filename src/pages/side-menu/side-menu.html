@@ -6,22 +6,22 @@
     </ion-header>
     <ion-content>
       <ion-list inset>
-        <button ion-item (click)="openPage(PerfilPage)">
+        <button ion-item (click)="openPage('PerfilPage')">
             <ion-icon name="person" item-start></ion-icon> Minha Conta
         </button>
-        <button ion-item (click)="openPage()">
+        <button ion-item (click)="openPage('RankingPage')">
             <ion-icon name="stats" item-start></ion-icon> Ranking
         </button>
-        <button ion-item (click)="openPage(SugestoesPage)">
+        <button ion-item (click)="openPage('SugestoesPage')">
             <ion-icon name="create" item-start></ion-icon> Sugestões
         </button>
         <ion-list-header>
             Comunicação
         </ion-list-header>
-        <button ion-item (click)="openPage(SobrePage)">
+        <button ion-item (click)="openPage('SobrePage')">
             <ion-icon name="information-circle" item-start></ion-icon> Sobre
           </button>
-        <button ion-item (click)="openPage(AjudaPage)">
+        <button ion-item (click)="openPage('AjudaPage')">
             <ion-icon name="help-circle-outline" item-start></ion-icon> Ajuda
         </button>
       </ion-list>
