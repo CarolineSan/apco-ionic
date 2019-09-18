@@ -1,27 +1,29 @@
 <ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Menu</ion-title>
+          <ion-avatar item-start>
+              <img src="assets/imgs/profile.jpg">
+          </ion-avatar>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-list inset>
-        <button ion-item (click)="openPage('PerfilPage')">
+        <button ion-item (click)="openPerfilPage()">
             <ion-icon name="person" item-start></ion-icon> Minha Conta
         </button>
-        <button ion-item (click)="openPage('RankingPage')">
+        <button ion-item (click)="openRankingPage()">
             <ion-icon name="stats" item-start></ion-icon> Ranking
         </button>
-        <button ion-item (click)="openPage('SugestoesPage')">
+        <button ion-item (click)="openSugestoesPage()">
             <ion-icon name="create" item-start></ion-icon> Sugestões
         </button>
         <ion-list-header>
             Comunicação
         </ion-list-header>
-        <button ion-item (click)="openPage('SobrePage')">
+        <button ion-item (click)="openSobrePage()">
             <ion-icon name="information-circle" item-start></ion-icon> Sobre
           </button>
-        <button ion-item (click)="openPage('AjudaPage')">
+        <button ion-item (click)="openAjudaPage()">
             <ion-icon name="help-circle-outline" item-start></ion-icon> Ajuda
         </button>
       </ion-list>
