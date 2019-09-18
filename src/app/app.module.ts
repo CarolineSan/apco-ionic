@@ -26,7 +26,10 @@ import { RankingPageModule } from '../pages/ranking/ranking.module';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      backButtonText: '',
+      backButtonIcon: 'ios-arrow-back'
+    }),
     IntroPageModule,
     FeedPageModule,
     MenuPageModule,

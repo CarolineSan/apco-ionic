@@ -15,11 +15,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RankingPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  profiles = [
+    { nome: "Buzz Lightyear", pontos: 10950, posicao: 1 },
+    { nome: "Buzz Lightyear", pontos: 9950, posicao: 2 },
+    { nome: "Buzz Lightyear", pontos: 9900, posicao: 3 },
+    { nome: "Buzz Lightyear", pontos: 8580, posicao: 4 },
+    { nome: "Buzz Lightyear", pontos: 7005, posicao: 5 },
+    { nome: "Buzz Lightyear", pontos: 6875, posicao: 6 },
+    { nome: "Buzz Lightyear", pontos: 6770, posicao: 7 },
+    { nome: "Buzz Lightyear", pontos: 6225, posicao: 8 },
+    { nome: "Buzz Lightyear", pontos: 5010, posicao: 9 },
+    { nome: "Buzz Lightyear", pontos: 4889, posicao: 10 },
+  ];
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RankingPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
 }

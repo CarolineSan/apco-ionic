@@ -1,9 +1,13 @@
 <ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-          <ion-avatar item-start>
-              <img src="assets/imgs/profile.jpg">
-          </ion-avatar>
+        <ion-avatar item-start>
+          <img class="foto-perfil" src="assets/imgs/profile.jpg">
+        </ion-avatar>
+        <div class="dados">
+            <span class="nome-perfil">Caroline Oliveira</span><br>
+            <span class="tipo-perfil">Administrador</span>
+        </div>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -24,7 +28,7 @@
             <ion-icon name="information-circle" item-start></ion-icon> Sobre
           </button>
         <button ion-item (click)="openAjudaPage()">
-            <ion-icon name="help-circle-outline" item-start></ion-icon> Ajuda
+            <ion-icon name="help-circle" item-start></ion-icon> Ajuda
         </button>
       </ion-list>
     </ion-content>

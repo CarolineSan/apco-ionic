@@ -1,10 +1,30 @@
 page-side-menu {
 
-    ion-avatar {
-        width: 90px;
-        padding-left: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+    ion-avatar img.foto-perfil {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        float: left;
+    }
+
+    .nome-perfil {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 11pt;
+        padding-left: 10px;
+    }
+
+    .tipo-perfil {
+        color: yellow;
+        padding-left: 10px;
+        font-size: 10pt;
+    }
+
+    div.dados {
+        padding-top: 25px;
     }
 
 }

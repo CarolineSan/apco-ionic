@@ -12,35 +12,30 @@
 
 <ion-content padding>
 
-    <ion-list-header>Top 10</ion-list-header>
-
-    <ion-list>
+    <ion-list-header>Sua posição</ion-list-header>
+    <ion-list inset>
         <ion-item>
           <ion-avatar item-start>
             <img src="assets/imgs/avatar/buzz-avatar.png">
           </ion-avatar>
-          <h2>Buzz Lightyear</h2>
-          <p>9850 pontos</p>
-          <ion-note item-end>1º Lugar</ion-note>
+          <h2>Caroline Oliveira</h2>
+          <p>1800 pontos</p>
+          <ion-note item-end>67º Lugar</ion-note>
         </ion-item>
+    </ion-list>
 
-        <ion-item>
-            <ion-avatar item-start>
-              <img src="assets/imgs/avatar/buzz-avatar.png">
-            </ion-avatar>
-            <h2>Buzz Lightyear</h2>
-            <p>8005 pontos</p>
-            <ion-note item-end>2º Lugar</ion-note>
-          </ion-item>
-
-          <ion-item>
-              <ion-avatar item-start>
-                <img src="assets/imgs/avatar/buzz-avatar.png">
-              </ion-avatar>
-              <h2>Buzz Lightyear</h2>
-              <p>7860 pontos</p>
-              <ion-note item-end>3º Lugar</ion-note>
-            </ion-item>
-      </ion-list>
+    <ion-list-header>Top 10</ion-list-header>
+    <ion-list>
+        <ion-item *ngFor="let p of profiles">
+          <ion-avatar item-start>
+            <img src="assets/imgs/avatar/buzz-avatar.png">
+          </ion-avatar>
+          <h2>{{p.nome}}r</h2>
+          <p>{{p.pontos}} pontos</p>
+          <ion-note item-end>{{p.posicao}}º Lugar</ion-note>
+        </ion-item>
+    </ion-list>
+    
+    <br>
 
 </ion-content>

@@ -4,4 +4,14 @@ page-ranking {
         align-self: flex-start;
         margin-top: 15px !important;
       }
+
+    ion-list-header.item.item-md.list-header.list-header-md,
+    ion-list-header.item.item-ios.list-header.list-header-ios {
+        margin-bottom: 0px !important;
+    }
+
+    ion-list.list.list-md,
+    ion-list.list.list-ios {
+      margin: 0px !important;
+    }
 }
