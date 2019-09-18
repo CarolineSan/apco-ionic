@@ -14,4 +14,12 @@ page-ranking {
     ion-list.list.list-ios {
       margin: 0px !important;
     }
+
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+      border-bottom: 0ch;
+    }
+
+    .list-ios > .item-block:first-child {
+      border-top: 0ch;
+    }
 }
