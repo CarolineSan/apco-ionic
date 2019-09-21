@@ -10,7 +10,7 @@
     <ion-slides pager>
 
         <ion-slide>
-          <img src="assets/imgs/slide1.png" alt="Imagem Ilustrativa App" class="slide-img">
+          <img src="assets/imgs/slide1.png" alt="Imagem Ilustrativa App" class="slide-img1">
           <h2>Bem-vindo(a)!</h2>
           <p class="small">Esse é o aplicativo da Petrobras em Compliance.</p>
           <p class="small">Ficou curioso? <strong>Veja mais</strong></p>
@@ -18,16 +18,23 @@
         </ion-slide>
       
         <ion-slide>
-          <img src="assets/imgs/slide2.png" alt="Imagem Ilustrativa App" class="slide-img">
+          <img src="assets/imgs/slide2.png" alt="Imagem Ilustrativa App" class="slide-img2">
           <h2>Conectado!</h2>
           <p class="small">Aqui você acompanha as últimas novidades sobre a Petrobras, avisos, notificação de eventos, etc.</p>
         </ion-slide>
       
         <ion-slide>
-          <img src="assets/imgs/slide3.png" alt="Ícone Trofeu" class="slide-img">
+          <img src="assets/imgs/slide3.png" alt="Ícone Trofeu" class="slide-img3">
           <h2>Ranking</h2>
           <p class="small">Ganhe pontos e suba no nosso Ranking interagindo com as publicações, respondendo nossas pesquisas e quizzes!</p>
-          <button (click)="goToTabsPage()" color="secondary" ion-button clear>Continuar</button>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/imgs/logo_apco.png" alt="Ícone Trofeu" class="slide-img4"><br>
+          <div class="botoes">
+            <button (click)="goToTabsPage()" color="secondary" class="button-continuar" ion-button outline>Fazer Login</button><br>
+            <button (click)="goToTabsPage()" color="secondary" class="button-continuar" ion-button>Cadastrar-se</button>
+          </div>
         </ion-slide>
       
       </ion-slides>

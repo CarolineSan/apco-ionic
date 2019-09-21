@@ -1,7 +1,20 @@
 page-intro {
 
-    img.slide-img {
-        width: 230px;
+    img.slide-img1 {
+        width: 240px;
+    }
+
+    img.slide-img2 {
+        width: 180px;
+    }
+
+    img.slide-img3 {
+        width: 235px;
+    }
+
+    img.slide-img4 {
+        width: 200px;
+        padding-top: 50%;
     }
 
     ion-slide {
@@ -13,4 +26,14 @@ page-intro {
         font-size: 10.5pt;
     }
 
+    .botoes {
+        margin-top: 40%;
+    }
+
+    .botoes button.button-continuar.disable-hover.button.button-ios.button-outline.button-outline-ios.button-outline-ios-secondary,
+    .botoes button.button-continuar.disable-hover.button.button-ios.button-default.button-default-ios.button-ios-secondary,
+    .botoes button.button-continuar.disable-hover.button.button-md.button-outline.button-outline-md.button-outline-md-secondary,
+    .botoes button.button-continuar.disable-hover.button.button-md.button-default.button-default-md.button-md-secondary {
+        width: 230px;
+    }
 }
