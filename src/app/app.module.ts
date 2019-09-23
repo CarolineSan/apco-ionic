@@ -1,3 +1,4 @@
+import { LoginPageModule } from './../pages/login/login.module';
 import { SideMenuPageModule } from './../pages/side-menu/side-menu.module';
 import { AjudaPageModule } from './../pages/ajuda/ajuda.module';
 import { SugestoesPageModule } from './../pages/sugestoes/sugestoes.module';
@@ -38,7 +39,8 @@ import { RankingPageModule } from '../pages/ranking/ranking.module';
     SobrePageModule,
     SugestoesPageModule,
     AjudaPageModule,
-    SideMenuPageModule
+    SideMenuPageModule,
+    LoginPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

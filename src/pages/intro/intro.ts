@@ -1,3 +1,4 @@
+import { LoginPage } from './../login/login';
 import { SideMenuPage } from './../side-menu/side-menu';
 import { TabsPage } from './../tabs/tabs';
 import { Component } from '@angular/core';
@@ -28,6 +29,10 @@ export class IntroPage {
 
   goToTabsPage() {
     this.navCtrl.setRoot(SideMenuPage);
+  }
+
+  goToLoginPage() {
+    this.navCtrl.setRoot(LoginPage);
   }
 
 }
