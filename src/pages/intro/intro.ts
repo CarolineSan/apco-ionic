@@ -23,14 +23,6 @@ export class IntroPage {
     public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad IntroPage');
-  }
-
-  goToTabsPage() {
-    this.navCtrl.setRoot(SideMenuPage);
-  }
-
   goToLoginPage() {
     this.navCtrl.setRoot(LoginPage);
   }
