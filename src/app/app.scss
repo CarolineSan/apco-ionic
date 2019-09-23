@@ -69,4 +69,26 @@ ion-list-header.header-info-menu.item.item-md.list-header.list-header-md {
     border-top: none !important;
 }
 
+.button-ios-secondary,
+.button-md-secondary {
+    background-color: rgb(47, 161, 90) !important;
+}
+
+.button-ios-secondary.activated,
+.button-md-secondary.activated {
+    background-color: rgb(35, 145, 77) !important;
+}
+
+.button-outline-ios-secondary,
+.button-outline-md-secondary {
+    border-color: rgb(47, 161, 90) !important;
+    color: rgb(47, 161, 90) !important;
+}
+
+.button-outline-ios-secondary.activated,
+.button-outline-md-secondary.activated {
+    background-color: rgb(47, 161, 90) !important;
+    color: #fff !important;
+}
+
 
