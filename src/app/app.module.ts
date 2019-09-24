@@ -1,3 +1,4 @@
+import { PublicacaoPageModule } from './../pages/publicacao/publicacao.module';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginPageModule } from './../pages/login/login.module';
 import { SideMenuPageModule } from './../pages/side-menu/side-menu.module';
@@ -45,7 +46,8 @@ import { FeedProvider } from '../providers/feed/feed';
     SugestoesPageModule,
     AjudaPageModule,
     SideMenuPageModule,
-    LoginPageModule
+    LoginPageModule,
+    PublicacaoPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

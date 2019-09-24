@@ -23,16 +23,17 @@
 
     <div class="body">
 
-        <ion-card *ngFor="let publicacao of lista_publicacoes">
+        <ion-card *ngFor="let publicacao of lista_publicacoes" >
 
-            <ion-item>
+            <ion-item (click)="abrirPublicacao()">
               <ion-avatar item-end>
                 <img src="assets/imgs/icons/icon_publicacao.png">
               </ion-avatar>
               <h2>{{publicacao.original_title}}</h2>
+              <p>{{publicacao.release_date}}</p>
             </ion-item>
           
-            <ion-card-content>
+            <ion-card-content (click)="abrirPublicacao()">
               <p>{{substr(180, publicacao.overview)}}</p>
             </ion-card-content>
           

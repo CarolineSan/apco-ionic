@@ -1,3 +1,4 @@
+import { PublicacaoPage } from './../publicacao/publicacao';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { FeedProvider } from '../../providers/feed/feed';
@@ -82,5 +83,9 @@ export class FeedPage {
     }
     return value;
   };
+
+  abrirPublicacao() {
+    this.navCtrl.push(PublicacaoPage);
+  }
 
 }
