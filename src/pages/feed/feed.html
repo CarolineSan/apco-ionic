@@ -17,6 +17,10 @@
 
 <ion-content>
 
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
     <div class="body">
 
         <ion-card *ngFor="let publicacao of lista_publicacoes">
@@ -29,7 +33,7 @@
             </ion-item>
           
             <ion-card-content>
-              <p>{{publicacao.overview}}</p>
+              <p>{{substr(180, publicacao.overview)}}</p>
             </ion-card-content>
           
             <ion-row>

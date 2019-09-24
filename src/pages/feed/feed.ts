@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { FeedProvider } from '../../providers/feed/feed';
 
 /**
@@ -20,22 +20,67 @@ import { FeedProvider } from '../../providers/feed/feed';
 export class FeedPage {
 
   public lista_publicacoes = new Array<any>();
+  public loader;
+  public refresher;
+  public isRefreshing: boolean = false;
 
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    private feedProvider: FeedProvider) {
+    private feedProvider: FeedProvider,
+    public loadingCtrl: LoadingController) {
   }
 
-  ionViewDidLoad() {
+  ionViewDidEnter() {
+    this.carregarPublicacoes();
+  }
+
+  doRefresh(refresher) {
+    this.refresher = refresher;
+    this.isRefreshing = true;
+    this.carregarPublicacoes();
+  }
+
+  carregarPublicacoes() {
+    if(!this.isRefreshing) {
+      this.abreCarregando();
+    }
     this.feedProvider.getUltimasPublicacoes().subscribe(
       data=>{
         this.lista_publicacoes = data['results'];
         console.log(this.lista_publicacoes);
+        this.fechaCarregando();
+        if(this.isRefreshing) {
+          this.refresher.complete();
+          this.isRefreshing = false;
+        }
       }, error=>{
         console.log(error);
+        this.fechaCarregando();
+        if(this.isRefreshing) {
+          this.refresher.complete();
+          this.isRefreshing = false;
+        }
       }
     );
   }
+
+  abreCarregando() {
+    this.loader = this.loadingCtrl.create({
+      content: "Carregando"
+    });
+    this.loader.present();
+  }
+
+  fechaCarregando() {
+    this.loader.dismiss();
+  }
+
+  substr (size, value) {
+    if (value && value.length > size) {
+        return value.substr(0, size) + "...";
+    }
+    return value;
+  };
 
 }
