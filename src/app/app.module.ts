@@ -22,6 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MenuPageModule } from '../pages/menu/menu.module';
 import { RankingPageModule } from '../pages/ranking/ranking.module';
 import { FeedProvider } from '../providers/feed/feed';
+import { LoginProvider } from '../providers/login/login';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { FeedProvider } from '../providers/feed/feed';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FeedProvider
+    FeedProvider,
+    LoginProvider
   ]
 })
 export class AppModule {}
